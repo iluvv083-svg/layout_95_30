@@ -87,28 +87,31 @@ body {
 
 
 .text-judul {
-    width: 90%;
-    max-width: 1250px;
-    box-sizing: border-box;
-
-    margin: 35px auto 20px;
-    padding: 30px 40px;
-
-    background-color: #f684aa;
-    color: #b73a64;
-
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    background: rgba(255,255,255,0.8);
     border: 4px solid white;
+    outline: 3px solid #d65b80;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(150, 50, 90, 0.25);
+    background-color: #ffcede;
+    color:  #b73a64;
+    text-align: center;
+    font-family: "dash", sans-serif;
+    font-weight: 400;
+    display: block;
+    width: fit-content;
+    margin: 35px auto 20px;
+    padding: 8px 25px;
     outline: 2px solid #fff4f7;
     outline-offset: 4px;
     border-radius: 5px;
-
     box-shadow:
         0 4px 0 #f684aa,
         0 7px 12px rgba(250, 122, 141, 0.25);
-
-    font-family: "dash", sans-serif;
-    text-align: center;
-    line-height: 1.9;
+    position: relative;
 }
 
 .kecil {
@@ -123,23 +126,15 @@ body {
 }
 
 
-#beranda .text-judul h1 {
-    width: fit-content;
-    max-width: 100%;
-    display: block;
-
-    margin: 15px auto;
-    padding: 20px 40px;
-
+.judul h1 {
     font-family: "DM Serif Display", serif;
     font-size: 70px;
     color: #c4406a;
-    text-align: center;
-
+    margin: 15px;
     transition: 0.5s ease;
 }
 
-.text-judul h1:hover {
+.judul h1:hover {
     color: #66812f;
     transform: scale(1.15);
 }
@@ -147,9 +142,7 @@ body {
 .text-judul {
     text-align: center;
     line-height: 1.9;
-    justify-content: center;
 }
-
 
 .section {
     padding: 70px 8%;
@@ -585,93 +578,4 @@ div.tentang-gambar:hover img.bottom{
         box-shadow:
         0 0 45px #8fae8f;
     }
-}
-
-.header {
-    background-image: url("bitt.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 270px;
-    padding: 35px 40px;
-    text-align: left;
-    border-bottom: 4px solid #ffe6f1;
-    position: relative;
-    overflow: hidden;
-}
-
-.footer {
-    background-image: url("bit.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    width: 100%;
-    height: 250px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer h4 {
-    color: #A83268;
-    font-size: 18px;
-    font-family: Georgia, serif;
-    margin: 0;
-    text-align: center;
-    background-color: #F6A9C2;
-    padding: 20px 90px;
-    outline: 2px solid white;
-    outline-offset: 4px;
-}
-
-.topnav {
-    padding: 12px 25px;
-    display: flex;
-    gap: 12px;
-}
-
-.topnav a {
-    color: #c03a86;
-    background-color: #ffc8db;
-    text-decoration: none;
-    padding: 12px 23px;
-    border-radius: 12px;
-    border: 2px solid rgb(255, 249, 240);
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px #B84D8050;
-}
-
-h2 {
-    background-color: rgb(255, 224, 239);
-    color:  #eb799f;
-    text-align: center;
-    font-family: "dash", sans-serif;
-    font-weight: 400;
-
-    display: block;
-    width: fit-content;
-    margin: 35px auto 20px;
-    padding: 8px 25px;
-
-    outline: 2px solid #fff4f7;
-    outline-offset: 4px;
-
-    border-radius: 5px;
-
-    box-shadow:
-        0 4px 0 #f684aa,
-        0 7px 12px rgba(250, 122, 141, 0.25);
-
-    position: relative;
-}
-
-.footer{
-    background-color: pink;
-    padding: 10px;
-    text-align: center;
 }
