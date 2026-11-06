@@ -1,0 +1,43 @@
+h1 {
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    text-decoration: overline;
+    text-decoration-style:wavy
+}
+P.a {
+    Color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif'
+}
+P.B {
+    color: green;
+    font-family:Georgia, 'Times New Roman', 'Times, serif';
+    text-align: left;
+}
+P.c {
+    Color: brown;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+}
+P.D {
+    color:deeppink;
+    text-align:justify;
+    background-color: rgb(255, 202, 238);
+}
+h2 {
+    color:coral;
+    text-decoration: underline;
+    text-decoration-color: rgb(84, 7, 110);
+    text-decoration-style:double;
+}
+h3 {
+    color:crimson;
+    text-decoration: overline underline;
+    text-decoration-style:dashed;
+}
+h4 {
+    color:hotpink;
+    text-decoration: line-through;
+    text-decoration-color:rgb(44, 35, 165);
+    text-decoration-style:dotted;
+    text-decoration-thickness: 3px;
+}

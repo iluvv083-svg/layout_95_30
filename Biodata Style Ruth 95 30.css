@@ -1,0 +1,718 @@
+body{
+    background-image: url("bgggggggggggggggg.png");
+    background-size: cover;
+    background-position : center;
+    background-attachment: fixed;
+}
+@font-face {
+    font-family: "dash";
+    src: url("bounce_dash/Bounce\ Dash.otf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "trimen";
+    src: url("trimen_drawing/Trimen\ Drawing\ Demo.otf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "gedong";
+    src: url("anak_gedong/Anak\ Gedong.otf");
+    font-weight: 400;
+}
+h2 {
+    background-color: rgb(255, 224, 239);
+    color:  #eb799f;
+    text-align: center;
+    font-family: "dash", sans-serif;
+    font-weight: 400;
+
+    display: block;
+    width: fit-content;
+    margin: 35px auto 20px;
+    padding: 8px 25px;
+
+    outline: 2px solid #fff4f7;
+    outline-offset: 4px;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 4px 0 #f684aa,
+        0 7px 12px rgba(250, 122, 141, 0.25);
+
+    position: relative;
+}
+h1{
+    background-color: #f684aa;
+    color: rgb(255, 242, 244);
+    text-align: center;
+    width: 800px;
+    display: block;
+    margin: 20px auto;
+    outline: 2px solid #fff4f7;
+    outline-offset: 1px;
+    font-family: "trimen";
+    font-weight: 400;
+}
+div.text {
+    font-family: "gedong";
+    font-weight: 100;
+    color : white;
+}
+div.biodata {
+    margin: 30px auto;
+    width : 80%;
+    background-color: #ff9dbe;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 5px solid white ;
+}
+div.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+}
+div.isi{
+    font-family: "gedong";
+    font-weight: 50;
+}
+div.foto{
+    position:relative;
+    width : 350px;
+    height : 400px;
+    overflow : hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white
+}
+div.foto img{
+    position: absolute;
+    width : 100%;
+    height: 100%;   
+    object-fit: cover;
+    object-position: center;
+    transition : 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1); 
+}
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+img{
+    padding: 10px;
+}
+div.buldak,
+div.burgers,
+div.fries,
+div.pizza {
+    width: 200px;
+    height: 250px;
+    background-color: #ff9dbe;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    margin-bottom: 25px;
+    outline: 4px solid white;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+div.buldak img,
+div.burgers img,
+div.fries img,
+div.pizza img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+div.buldak:hover,
+div.burgers:hover,
+div.fries:hover,
+div.pizza:hover {
+    transform: scale(1.2);
+}
+div.buldak:hover img,
+div.burgers:hover img,
+div.fries:hover img,
+div.pizza:hover img {
+    transform: translateY(-15px) rotate(-5deg) scale(1.05);
+}
+div.airputih,
+div.soda,
+div.boba,
+div.esteh {
+    width: 200px;
+    height: 250px;
+    background-color: #ff9dbe;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    margin-bottom: 25px;
+    outline: 4px solid white;
+    position: relative;
+    overflow: hidden;
+}
+div.airputih img,
+div.soda img,
+div.boba img,
+div.esteh img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    filter: blur(4px);
+    opacity: 0.3;
+    transition: 0.5s ease;
+}
+div.airputih:hover img,
+div.soda:hover img,
+div.boba:hover img,
+div.esteh:hover img {
+    filter: blur(0);
+    opacity: 1;
+}
+
+div.airputih:hover,
+div.soda:hover,
+div.boba:hover,
+div.esteh:hover {
+    transform: scale(1.2);
+    transition : 0.5s ease
+}
+div.cruella,
+div.httyd,
+div.spiderman,
+div.barbie {
+    width: 200px;
+    height: 250px;
+    margin-bottom: 25px;
+    perspective: 1000px;
+}
+.movie-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+.cruella:hover .movie-card,
+.httyd:hover .movie-card,
+.spiderman:hover .movie-card,
+.barbie:hover .movie-card {
+    transform: rotateY(180deg);
+}
+.movie-front,
+.movie-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    backface-visibility: hidden;
+
+    background-color: #ff9dbe;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    outline: 4px solid white;
+}
+
+.movie-front {
+    text-align: center;
+}
+
+.movie-front img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.movie-front p {
+    font-family: "gedong";
+    font-weight: 100;
+    color: white
+}
+.movie-back {
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.movie-back h3 {
+    margin-top: 10px;
+    font-family: "gedong";
+    font-weight: 200;
+    color: white
+}
+
+.movie-back p {
+    font-size: 14px;
+    line-height: 1;
+
+    font-weight: 25;
+    color: white
+}
+.singing,
+.dancing,
+.trumpet,
+.art {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 250px;
+    background-color:  #ff9dbe;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    margin-bottom: 25px;
+    align-items: center;
+    outline: 4px solid white;
+}
+.singing > img,
+.dancing > img,
+.trumpet > img,
+.art > img {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+}
+.singing > .text,
+.dancing > .text,
+.trumpet > .text,
+.art > .text {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 200px;
+    text-align: center;
+    z-index: 4;
+}
+.singing > .hover-text,
+.dancing > .hover-text,
+.trumpet > .hover-text,
+.art > .hover-text {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    font-family: "trimen";
+    font-weight: 100;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.singing:hover > img,
+.dancing:hover > img,
+.trumpet:hover > img,
+.art:hover > img {
+    opacity: 0;
+}
+.singing:hover > .hover-text,
+.dancing:hover > .hover-text,
+.trumpet:hover > .hover-text,
+.art:hover > .hover-text {
+    opacity: 1;
+}
+.singing:hover,
+.dancing:hover,
+.trumpet:hover,
+.art:hover{
+    overflow: hidden;
+    transition: transform 1s ease;
+    transform: scale(1.2);
+}
+section#atlet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.mack {
+    width: 200px;
+    height: 250px;
+    background-color: #ff9dbe;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    margin-bottom: 25px;
+    outline: 4px solid white;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.mack > img {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.mack > .hover-video {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.mack > .text {
+    position: absolute;
+
+    top: 170px;
+    left: 0;
+
+    width: 200px;
+
+    text-align: center;
+    z-index: 3;
+}
+
+.mack:hover > img {
+    opacity: 0;
+}
+
+.mack:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+
+div.will,
+div.ivar,
+div.misa {
+    width: 200px;
+    height: 250px;
+    background-color: #ff9dbe;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    margin-bottom: 25px;
+    outline: 4px solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+.will > img,
+.ivar > img,
+.misa > img {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.will > .hover-video,
+.ivar > .hover-video,
+.misa > .hover-video {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.will > .text,
+.ivar > .text,
+.misa > .text {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 200px;
+    text-align: center;
+    z-index: 3;
+}
+
+.will:hover > img,
+.ivar:hover > img,
+.misa:hover > img {
+    opacity: 0;
+}
+
+.will:hover,
+.ivar:hover,
+.misa:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ff9fbf;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: #b82149;
+    text-underline-position: below;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+section#film {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+}
+section#hobby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+}
+section#makanan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+}
+section#minuman {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+}
+section#artis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+div.owen{
+    width: 200px;
+    height: 250px;
+    background-color:  #ff9dbe;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    margin-bottom: 25px;
+    align-items: center;
+    outline: 4px solid white;
+}
+div.owen:hover{
+    overflow: hidden;
+    transition: transform 1s ease;
+    transform: scale(1.2);
+}
+div.mckenna{
+    width: 200px;
+    height: 250px;
+    background-color:  #ff9dbe;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    margin-bottom: 25px;
+    align-items: center;
+    outline: 4px solid white;
+}
+div.mckenna:hover{
+    overflow: hidden;
+    transition: transform 1s ease;
+    transform: scale(1.2);
+}
+div.ari{
+    width: 200px;
+    height: 250px;
+    background-color: #ff9dbe;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    margin-bottom: 25px;
+    align-items: center;
+    outline: 4px solid white;
+}
+div.ari:hover{
+    overflow: hidden;
+    transition: transform 1s ease;
+    transform: scale(1.2);
+}
+div.enhypen{
+    width: 200px;
+    height: 250px;
+    background-color:  #ff9dbe;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    margin-bottom: 25px;
+    align-items: center;
+    outline: 4px solid white;
+}
+div.enhypen:hover{
+    overflow: hidden;
+    transition: transform 1s ease;
+    transform: scale(1.2);
+}
+.owen,
+.mckenna,
+.ari,
+.enhypen {
+    position: relative;
+    overflow: hidden;
+}
+.artist-images {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+.artist-images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    padding: 0;
+}
+.artist-images img:first-child {
+    z-index: 2;
+    transition: transform 0.6s ease;
+}
+.artist-images img:last-child {
+    z-index: 1;
+}
+.owen:hover .artist-images img:first-child,
+.mckenna:hover .artist-images img:first-child,
+.ari:hover .artist-images img:first-child,
+.enhypen:hover .artist-images img:first-child {
+    transform: translateX(150px);
+}
+.owen > .text,
+.mckenna > .text,
+.ari > .text,
+.enhypen > .text {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 200px;
+    text-align: center;
+    z-index: 3;
+}
+
+
+
+.topnav a {
+    color: #c03a86;
+    background-color: #ffc8db;
+    text-decoration: none;
+    padding: 12px 23px;
+    border-radius: 12px;
+    border: 2px solid rgb(255, 249, 240);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px #B84D8050;
+}
+
+.footer{
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+}
+
+.header {
+    background-image: url("bitt.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 270px;
+    padding: 35px 40px;
+    text-align: left;
+    border-bottom: 4px solid #ffe6f1;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.footer {
+    background-image: url("bit.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h4 {
+    color: #A83268;
+    font-size: 18px;
+    font-family: Georgia, serif;
+    margin: 0;
+    text-align: center;
+    background-color: #F6A9C2;
+    padding: 20px 90px;
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
